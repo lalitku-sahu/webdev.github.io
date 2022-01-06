@@ -1,0 +1,236 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+:root
+{
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+.dark-theme
+{
+    --primary-color: #000106;
+    --secondary-color: #fff;
+}
+#icon
+{
+    width: 30px;
+    cursor: pointer;
+}
+.full-page
+{
+    width: 100vw;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+    position: absolute;
+/*this block of code is for setting the background image and position of the image */
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 50px;
+/* this is for setting the dimension of the navigation bar*/
+}
+nav
+{
+    flex: 1;
+    text-align: center;
+}
+nav ul
+{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 70px;
+/* this block are for styling the list elements */    
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--primary-color);
+    font-family: sans-serif;
+}
+nav ul li button
+{
+    font-size: 20px;
+    color: var(--primary-color);
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+nav ul li button:hover
+{
+    color: aqua;
+}
+nav ul li a:hover
+{
+    color: aqua;
+}
+a
+{
+    text-decoration: none;
+    color: palevioletred;
+    font-size: 28px;
+}
+/*lets move on to the html file and lets write code for the login form */
+#login form
+{
+    display: none;
+    /* this block is for hiding the form ok */
+}
+.form-box
+{
+    width: 380px;
+    height: 490px;
+    position: relative;
+    margin: 2% auto;
+    background:rgba(0,0,0,0.3);
+    padding: 10px;
+    overflow: hidden;
+    /* creating the form with width, height etc */
+}
+.button-box
+{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+.toggle-btn
+{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #f3c693;
+    border-radius: 30px;
+    transition: .5s;
+}
+.input-group-login
+{
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+} 
+.input-group-register
+{
+    top: 120px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+} 
+.forgot-password
+{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: transparent;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.forgot-password a
+{
+    font-size: 20px;
+    color:rgb(125, 226, 43)
+}
+.forgot-password a:hover
+{
+    color: var(--primary-color);
+}
+.input-field
+{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn
+{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #f3c693;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.check-box
+{
+    margin: 30px 20px 34px 0;
+    padding: 20%;
+}
+span
+{
+    color: #777;
+    font-size:15px;
+    bottom:68px;
+    position: center;
+}
+#login
+{
+    left:50px;
+}
+#login input
+{
+    color: var(--primary-color);
+    font-size:15;
+}
+#register
+{
+    left:450px;
+}
+#register input
+{
+    color: var(--primary-color);
+    font-size:15;
+}
+.social-links
+{
+    margin-left: 8%;
+}
+.social-links a
+{
+    font-size: 30px;
+    margin-right: 20px;
+}
+.social-links a:hover
+{
+    color: var(--primary-color);
+}
+/* let us add some java script code so lets move to html file*/
