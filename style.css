@@ -1,25 +1,30 @@
-*
-{
+/* CSS stands for cascading style sheet. It describes how HTML elements are to be displayed on screen */
+*                         /* is is used in place of body tag */ 
+{                        
     margin: 0;
     padding: 0;
     box-sizing:border-box;
+     /* for styling body */
 }
 :root
 {
     --primary-color: #edf2fc;
     --secondary-color: #212121;
+    /* the colour which was taken as black now it is changed as primary colour to be white */
 }
 .dark-theme
 {
     --primary-color: #000106;
     --secondary-color: #fff;
-}
+    /* to style dark & light theme */
+} 
 #icon
 {
-    width: 30px;
+    width: 40px;
     cursor: pointer;
+    /* giving width to the icon i.e moon & sun icon for dark mode and light mode */
 }
-.full-page
+.full-page                       /* this is for styling class.full-page*/
 {
     width: 100vw;
     background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(bg.jpg);
@@ -27,9 +32,9 @@
     background-size: cover;
     height: 109vh;
     position: absolute;
-/*this block of code is for setting the background image and position of the image */
+    /*this block of code is for setting the background image and position of the image */   
 }
-.navbar
+.navbar                         /* this is for styling class.navbar */
 {
     display: flex;
     align-items: center;
@@ -37,30 +42,33 @@
     padding-left: 50px;
     padding-right: 30px;
     padding-top: 50px;
-/* this is for setting the dimension of the navigation bar*/
+    /* this is for setting the dimension of the navigation bar*/            
 }
-nav
+nav                          
 {
     flex: 1;
     text-align: center;
+    /* this is also for styling navigation i.e giving allignment etc */    
 }
 nav ul
 {
     display: inline-block;
-    list-style: none;
+    list-style: none; 
+    /* this is for styling unordered list */
 }
 nav ul li
 {
     display: inline-block;
     margin-right: 70px;
-/* this block are for styling the list elements */    
+    /* this block are for styling the list elements */                                 
 }
 nav ul li a
 {
     text-decoration: none;
     font-size: 20px;
     color: var(--primary-color);
-    font-family: sans-serif;
+    font-family: sans-serif; 
+    /* this is for styling href of list elements */  
 }
 nav ul li button
 {
@@ -70,38 +78,43 @@ nav ul li button
     border: none;
     background: transparent;
     cursor: pointer;
-    font-family: sans-serif;
+    font-family: sans-serif; 
+    /* this is for styling list element buttons i.e the login/register button colour has changed */
 }
 nav ul li button:hover
 {
-    color: aqua;
+    color: aqua; 
+    /* this is used for giving transition effect when we place the pointer on the button i.e login/register button */
 }
 nav ul li a:hover
 {
     color: aqua;
+    /* this is used for giving transition effect when we place the pointer on the href list elements*/
 }
 a
 {
     text-decoration: none;
     color: palevioletred;
     font-size: 28px;
+    /* this is for giving colour, font etc to href list elements */
 }
-/*lets move on to the html file and lets write code for the login form */
+/*lets move on to the html file and lets write code for the login form */    
+/* styling form box */                  
 #login form
 {
     display: none;
-    /* this block is for hiding the form ok */
+    /* this block is for hiding the form */                                                    
 }
 .form-box
 {
     width: 380px;
-    height: 490px;
+    height: 480px;
     position: relative;
     margin: 2% auto;
     background:rgba(0,0,0,0.3);
     padding: 10px;
     overflow: hidden;
-    /* creating the form with width, height etc */
+    /* creating the form with width, height etc */                                                
 }
 .button-box
 {
@@ -110,6 +123,7 @@ a
     position: relative;
     box-shadow: 0 0 20px 9px #ff61241f;
     border-radius: 30px;
+    /*styling and giving width margin etc to login & register button */ 
 }
 .toggle-btn
 {
@@ -119,8 +133,9 @@ a
     border: 0;
     outline: none;
     position: relative;
+    /* to style the login and register button while they toggle */
 }
-#btn
+#btn             /* "#" is used for specifying ID and "." is used to specify CLASS */
 {
     top: 0;
     left: 0;
@@ -130,6 +145,7 @@ a
     background: #f3c693;
     border-radius: 30px;
     transition: .5s;
+    /* to give colour( i.e effects) transition, border etc to login & rigister button of form box */
 }
 .input-group-login
 {
@@ -137,14 +153,16 @@ a
     position: absolute;
     width: 280px;
     transition: .5s;
-} 
+    /* this is for styling the form id='login' class='input-group-login' */
+}
 .input-group-register
 {
     top: 120px;
     position: absolute;
     width: 280px;
     transition: .5s;
-} 
+    /* this is for styling the form id='register' class='input-group-register' */
+}
 .forgot-password
 {
     width: 85%;
@@ -156,16 +174,19 @@ a
     border: 0;
     outline: none;
     border-radius: 30px;
+    /* this is for styling the forgot password button of class.forgot-password */
 }
 .forgot-password a
 {
     font-size: 20px;
     color:rgb(125, 226, 43)
+    /* this is for giving font size and colour to href text */
 }
 .forgot-password a:hover
 {
     color: var(--primary-color);
-}
+    /* this is for hover effect on forgot password i.e to give transition effect when we place the cursor on it */
+} 
 .input-field
 {
     width: 100%;
@@ -177,6 +198,7 @@ a
     border-bottom: 1px solid #999;
     outline: none;
     background: transparent;
+    /* to style all the input type of class.input-field under class.input-group-(login & register) */
 }
 .submit-btn
 {
@@ -189,11 +211,13 @@ a
     border: 0;
     outline: none;
     border-radius: 30px;
+    /* to style all the button type of class.submit-btn under class.input-group-(login & register) */
 }
 .check-box
 {
     margin: 30px 20px 34px 0;
     padding: 20%;
+    /* to style all the input of class.check-box under class.input-group-(login & register) */
 }
 span
 {
@@ -201,30 +225,38 @@ span
     font-size:15px;
     bottom:68px;
     position: center;
+    /* to style the <span> tag of class.check-box */
 }
 #login
 {
     left:50px;
+    /* styling login form to seprate login & register form*/
 }
 #login input
 {
     color: var(--primary-color);
     font-size:15;
+    /* above we styled login form now we styled inputs in login form */
 }
 #register
 {
     left:450px;
+    /* styling register form to seprate login & register form*/
 }
 #register input
 {
     color: var(--primary-color);
     font-size:15;
+    /* above we styled register form now we styled inputs in register form */
 }
-.social-links
+.social-links                                      /* this is for styling the-- */ 
 {
+    position: absolute;
     margin-left: 8%;
+    top: 88vh;
+    
 }
-.social-links a
+.social-links a                                    /* --social links that i added */
 {
     font-size: 30px;
     margin-right: 20px;
@@ -233,4 +265,5 @@ span
 {
     color: var(--primary-color);
 }
-/* let us add some java script code so lets move to html file*/
+/* let us add some java script code so lets move to html file*/ 
+/* to give toggle effect/ moving effect to login and register form and also to give many other effects with the help of java script code */  
